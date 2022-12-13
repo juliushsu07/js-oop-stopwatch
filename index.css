@@ -1,6 +1,5 @@
 :root {
-    --primary: #ffd43b;
-    --primary-variant: #fab005;
+    --primary: crimson;
     --grey: #1F2937;
     --dark: #183153;
     --light: #f0f1f3;
@@ -16,6 +15,7 @@ body {
     background: var(--grey);
     color: var(--light);
 }
+
 main {
     text-align: center;
     background-color: var(--dark);   
@@ -24,4 +24,46 @@ main {
     margin: 4rem auto;
     padding: 1rem 2rem;
     border-radius: 1rem;
+}
+
+section {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button {
+    /* Reset */
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    
+    /* Styling */
+    color: var(--light);
+    font-size: 1.125rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+
+    /* Animation */
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    color: var(--primary);
+    background-color: var(--light);
 }
