@@ -1,0 +1,27 @@
+:root {
+    --primary: #ffd43b;
+    --primary-variant: #fab005;
+    --grey: #1F2937;
+    --dark: #183153;
+    --light: #f0f1f3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', san-serif;
+}
+
+body {
+    background: var(--grey);
+    color: var(--light);
+}
+main {
+    text-align: center;
+    background-color: var(--dark);   
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
